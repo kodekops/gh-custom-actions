@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Load and Cache dependencies
-        uses: ./.github/actions/cached_deps
+        uses: ./.github/actions/cached-deps
 
       - name: Lint code
         run: npm run lint
@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Load and Cache dependencies
-        uses: ./.github/actions/cached_deps
+        uses: ./.github/actions/cached-deps
 
       - name: Test code
         id: run-tests
@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Load and Cache dependencies
-        uses: ./.github/actions/cached_deps
+        uses: ./.github/actions/cached-deps
 
       - name: Build website
         run: npm run build
